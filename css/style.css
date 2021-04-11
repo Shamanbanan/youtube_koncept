@@ -9,7 +9,14 @@ body {
 .header {
   padding: 20px 70px 20px 32px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
 }
 .menu-button {
   padding: 0;
@@ -53,6 +60,9 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
+.logo {
+  margin-right: 53px;
+}
 .icon-search {
   fill: #000000;
 }
@@ -79,6 +89,13 @@ body {
 }
 .sidebar {
   padding-left: 32px;
+  position: fixed;
+  width: 15%;
+  top: 114px;
+  left: 0;
+  height: calc(100% - 114px);
+  overflow-y: auto;
+  background-color: #fff;
 }
 .nav-menu {
   padding-left: 0;
@@ -101,7 +118,6 @@ body {
 }
 .nav-item {
   margin-bottom: 28px;
-
   color: #898989;
 }
 .nav-item .icon {
@@ -120,4 +136,196 @@ body {
   font-size: 18px;
   line-height: 23px;
   margin-bottom: 30px;
+}
+.content {
+  width: 100%;
+  height: 400px;
+  padding-top: 114px;
+  padding-left: 18%;
+}
+.channel-title {
+  display: flex;
+  align-items: center;
+  font-family: Mulish, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+.channel-text {
+  padding-left: 20px;
+}
+
+.channel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.channel {
+  position: relative;
+  margin-bottom: 49px;
+}
+
+/*  card  */
+
+.video-thumb {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+.thumbnail {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+.video-card {
+  width: 250px;
+}
+.video-duration {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 9px;
+  line-height: 18px;
+}
+.video-title {
+  font-family: Mulish, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202c;
+}
+.video-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Mulish;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+.video-views {
+  padding-right: 5px;
+}
+.video-counter {
+  display: flex;
+}
+.video-views:after {
+  content: " ";
+  width: 2px;
+  height: 2px;
+  background-color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.channel-button {
+  cursor: pointer;
+}
+.slider-buttons {
+  position: absolute;
+  right: 8%;
+  top: 15px;
+  display: flex;
+  width: 66px;
+  justify-content: space-between;
+}
+
+/*      channel-recommended     */
+
+.channel-recommended {
+  position: relative;
+}
+.recommended-text {
+  margin-top: 0;
+}
+.recommend-buttons {
+  position: absolute;
+  top: 0;
+  right: 8%;
+  display: flex;
+  justify-content: space-between;
+  width: 66px;
+  cursor: pointer;
+}
+.card-recommend-video {
+  width: 540px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.card-recommend-video .video-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.wrapper-video {
+  position: relative;
+  width: 540px;
+  height: 250px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+.wrapper-video .video-duration {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.video-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*    channel-recommended   */
+
+.group-recommended {
+  position: relative;
+}
+
+.group-text {
+  font-family: Mulish, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #c2c2c2;
+  margin-left: 19px;
+}
+.container-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.container-title .channel-title {
+  margin-bottom: 0;
+  align-items: center;
+}
+.button-subscribe {
+  background-color: #e82929;
+  width: 154px;
+  height: 40px;
+  padding: 10px 19px 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-family: Mulish, sans-serif;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 15%;
+}
+.group-buttons {
+  position: absolute;
+  top: 15px;
+  right: 8%;
+  display: flex;
+  justify-content: space-between;
+  width: 66px;
 }
