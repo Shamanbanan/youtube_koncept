@@ -46,6 +46,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-right: 17px;
+  margin-right: 40px;
 }
 .input-search {
   background-color: transparent;
@@ -87,10 +88,12 @@ body {
   border-radius: 50%;
   margin-left: 45px;
 }
+
+/*  SIDEBAR   */
 .sidebar {
   padding-left: 32px;
   position: fixed;
-  width: 15%;
+  width: 240px;
   top: 114px;
   left: 0;
   height: calc(100% - 114px);
@@ -141,7 +144,8 @@ body {
   width: 100%;
   height: 400px;
   padding-top: 114px;
-  padding-left: 18%;
+  padding-left: 260px;
+  padding-right: 70px;
 }
 .channel-title {
   display: flex;
@@ -151,7 +155,6 @@ body {
   font-weight: bold;
   color: #000000;
   text-decoration: none;
-  margin-bottom: 30px;
 }
 .channel-text {
   padding-left: 20px;
@@ -166,23 +169,25 @@ body {
   position: relative;
   margin-bottom: 49px;
 }
-
+.channel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
 /*  card  */
 
 .video-thumb {
-  width: 250px;
+  width: 100%;
   height: 150px;
   overflow: hidden;
   border-radius: 14px;
   position: relative;
 }
 .thumbnail {
-  width: 250px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
-}
-.video-card {
-  width: 250px;
 }
 .video-duration {
   position: absolute;
@@ -231,9 +236,6 @@ body {
   cursor: pointer;
 }
 .slider-buttons {
-  position: absolute;
-  right: 8%;
-  top: 15px;
   display: flex;
   width: 66px;
   justify-content: space-between;
@@ -244,21 +246,23 @@ body {
 .channel-recommended {
   position: relative;
 }
+.recommended-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
 .recommended-text {
   margin-top: 0;
+  margin-bottom: 0;
 }
 .recommend-buttons {
-  position: absolute;
-  top: 0;
-  right: 8%;
   display: flex;
   justify-content: space-between;
   width: 66px;
   cursor: pointer;
 }
 .card-recommend-video {
-  width: 540px;
-  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -270,9 +274,8 @@ body {
 }
 
 .wrapper-video {
+  width: 100%;
   position: relative;
-  width: 540px;
-  height: 250px;
   border-radius: 14px;
   object-fit: cover;
 }
@@ -301,6 +304,7 @@ body {
 }
 .container-title {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
@@ -319,13 +323,28 @@ body {
   font-family: Mulish, sans-serif;
   cursor: pointer;
   margin-left: auto;
-  margin-right: 15%;
 }
 .group-buttons {
-  position: absolute;
-  top: 15px;
-  right: 8%;
   display: flex;
   justify-content: space-between;
   width: 66px;
+}
+@media (max-width: 860px) {
+  .icons {
+    display: none;
+  }
+  .user {
+    margin-left: auto;
+  }
+}
+@media (max-width: 640px) {
+  .menu-button {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .content {
+    padding-left: 32px;
+  }
 }
