@@ -272,23 +272,16 @@ body {
   margin-top: 10px;
   margin-bottom: 5px;
 }
-
-.wrapper-video {
-  width: 100%;
-  position: relative;
-  border-radius: 14px;
-  object-fit: cover;
-}
-.wrapper-video .video-duration {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
 .video-info {
   display: flex;
   justify-content: space-between;
 }
-
+.card-recommend-video.video-thumb {
+  height: 250px;
+}
+.card-recommend-video.thumbnail {
+  height: 100%;
+}
 /*    channel-recommended   */
 
 .group-recommended {
