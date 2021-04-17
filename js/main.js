@@ -86,7 +86,7 @@ searchButton.addEventListener('click', () => {
   mobileSearch.classList.toggle('is-open');
 });
 
-if (document.documentElement.scrollWidth <= 640) {
+if (document.documentElement.scrollWidth <= 440) {
   swiper.destroy();
   recommend.destroy();
   recomm.destroy();

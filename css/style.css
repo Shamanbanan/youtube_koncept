@@ -420,7 +420,7 @@ body {
   }
   .mobile-search {
     display: block;
-    margin-right: 30px;
+    margin-right: 11%;
   }
   .input-group {
     position: fixed;
@@ -458,7 +458,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 440px) {
   .container-title {
     display: grid;
     grid-template-rows: 1fr 0.5fr 1fr;
@@ -478,7 +478,6 @@ body {
     align-self: flex-start;
     text-align: start;
     margin-left: 22%;
-
   }
   .button-subscribe {
     grid-column: 1/3;
